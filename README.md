@@ -17,8 +17,8 @@ This is a Laravel Starter Template for your first projects, included Laravel/ui 
 
 ## How to Use
 
--- Clone this respository to your project
--- composer update
--- php artisan key:generate
--- php artisan migrate --seed
--- now you have project laravel with Starter Template
+1. Clone this repository to your project
+2. Run `composer update`
+3. Generate the application key using `php artisan key:generate`
+4. Run database migrations and seed the database using `php artisan migrate --seed`
+5. Now you have a Laravel project with the Starter Template
