@@ -13,9 +13,11 @@ This is a Laravel Starter Template for your first projects, included Laravel/ui 
 
 ## authtentication
 
--- Have a simple role management included
+-- Have a simple role management included ['admin', 'user']
 
 ## How to Use
 
--- Clone this respository to your project
---
+-- [Clone this respository to your project]
+-- [composer update]
+-- [php artisan key:generate]
+-- [php artisan migrate --seed]
