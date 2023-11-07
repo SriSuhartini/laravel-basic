@@ -13,9 +13,11 @@ This is a Laravel Starter Template for your first projects, included Laravel/ui 
 
 ## Features
 
--- Have a simple role management included ['admin', 'user']
--- Installed AdminLTE Template
--- Installed Laravel/ui (Vue Js) and Bootstrap Template
+<ul>
+  <li>Have a simple role management included ['admin', 'user']</li>
+  <li>Installed AdminLTE Template</li>
+  <li>Installed Laravel/ui (Vue Js) and Bootstrap Template</li>
+</ul>
 
 ## How to Install
 
@@ -36,4 +38,4 @@ This is a Laravel Starter Template for your first projects, included Laravel/ui 
 
 ## Default User
 
--- Default user is `admin@admin.com` and password `admin123`. you can change in `DatabaseSeeder.php` if you want
+Default user is `admin@admin.com` and password `admin123`. you can change in `DatabaseSeeder.php` if you want
