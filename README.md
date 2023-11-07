@@ -19,6 +19,8 @@ This is a Laravel Starter Template for your first projects, included Laravel/ui 
 
 1. Clone this repository to your project
 2. Run `composer update`
-3. Generate the application key using `php artisan key:generate`
-4. Run database migrations and seed the database using `php artisan migrate --seed`
-5. Now you have a Laravel project with the Starter Template
+3. copy .env.example to .env
+4. Generate the application key using `php artisan key:generate`
+5. Set your .env file
+6. Run database migrations and seed the database using `php artisan migrate --seed`
+7. Now you have a Laravel project with the Starter Template
