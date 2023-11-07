@@ -23,7 +23,7 @@ This is a Laravel Starter Template for your first projects, included Laravel/ui 
 
 1. Clone this repository to your project
 2. Run `composer update`
-3. copy .env.example to .env (cp .env.example .env)
+3. copy .env.example to .env `(cp .env.example .env)`
 4. Generate the application key using `php artisan key:generate`
 5. Set your .env file
 6. npm install
