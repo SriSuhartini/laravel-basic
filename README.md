@@ -26,7 +26,7 @@ This is a Laravel Starter Template for your first projects, included Laravel/ui 
 3. copy .env.example to .env `(cp .env.example .env)`
 4. Generate the application key using `php artisan key:generate`
 5. Set your .env file
-6. npm install
+6. run `npm install`
 7. Run database migrations and seed the database using `php artisan migrate --seed`
 8. Now you have a Laravel project with the Starter Template
 
