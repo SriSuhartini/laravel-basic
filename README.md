@@ -9,18 +9,31 @@
 
 ## About Laravel Starter Template
 
-This is a Laravel Starter Template for your first projects, included Laravel/ui with vue js Scaffholding and AdminLTE Template
+This is a Laravel Starter Template for your first projects, included Laravel/ui with vue js, bootstap and Scaffholding plus AdminLTE Template
 
-## authtentication
+## Features
 
 -- Have a simple role management included ['admin', 'user']
+-- Installed AdminLTE Template
+-- Installed Laravel/ui (Vue Js) and Bootstrap Template
 
-## How to Use
+## How to Install
 
 1. Clone this repository to your project
 2. Run `composer update`
-3. copy .env.example to .env
+3. copy .env.example to .env (cp .env.example .env)
 4. Generate the application key using `php artisan key:generate`
 5. Set your .env file
-6. Run database migrations and seed the database using `php artisan migrate --seed`
-7. Now you have a Laravel project with the Starter Template
+6. npm install
+7. Run database migrations and seed the database using `php artisan migrate --seed`
+8. Now you have a Laravel project with the Starter Template
+
+## How to Use
+
+1. Split your Terminal
+2. In one side run `php artisan serve` and another `npm run dev`
+3. Usually you will got URL `127.0.0.1:8000` and open that URL in your browser
+
+## Default User
+
+-- Default user is `admin@admin.com` and password `admin123`. you can change in `DatabaseSeeder.php` if you want
