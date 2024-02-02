@@ -11,7 +11,7 @@ class UserController extends Controller
      */
     public function index()
     {
-        return 'Ini halaman index';
+        return view('user.index');
     }
 
     /**
@@ -19,7 +19,7 @@ class UserController extends Controller
      */
     public function create()
     {
-        return 'Ini halaman create';
+        return view('user.create');
     }
 
     /**
@@ -35,7 +35,7 @@ class UserController extends Controller
      */
     public function show(string $id)
     {
-        return 'Ini halaman show';
+        return view('user.show');
     }
 
     /**
@@ -43,7 +43,7 @@ class UserController extends Controller
      */
     public function edit(string $id)
     {
-        return 'Ini halaman edit';
+        return view('user.edit');
     }
 
     /**
