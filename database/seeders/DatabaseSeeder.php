@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
+use App\Models\Mahasiswa;
 use App\Models\User;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Hash;
@@ -27,6 +28,12 @@ class DatabaseSeeder extends Seeder
             "email" => "admin@admin.com",
             "password" => Hash::make("admin123"),
             "role_id" => 1
+        ]);
+
+        Mahasiswa::create([
+            "nama"  => "Sandhika Galih",
+            "alamat"  => "Web Programming Unpas",
+            "tanggal_lahir"  => now(),
         ]);
 
         $this->call([

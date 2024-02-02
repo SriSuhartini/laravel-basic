@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\MahasiswaController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -28,6 +29,16 @@ Route::prefix('user')->group(function () {
     Route::get('/create', [UserController::class, 'create'])->name('user.create');
     Route::get('/{user}', [UserController::class, 'show'])->name('user.show');
     Route::put('/{user}', [UserController::class, 'update'])->name('user.update');
-    Route::delete('/{user}', [UserController::class, 'delete'])->name('user.delete');
+    Route::delete('/{user}', [UserController::class, 'destroy'])->name('user.destroy');
     Route::get('/{user}/edit', [UserController::class, 'edit'])->name('user.edit');
+});
+
+Route::prefix('mahasiswa')->group(function () {
+    Route::get('/', [MahasiswaController::class, 'index'])->name('mahasiswa.index');
+    Route::post('/', [MahasiswaController::class, 'store'])->name('mahasiswa.store');
+    Route::get('/create', [MahasiswaController::class, 'create'])->name('mahasiswa.create');
+    Route::get('/{mahasiswa}', [MahasiswaController::class, 'show'])->name('mahasiswa.show');
+    Route::put('/{mahasiswa}', [MahasiswaController::class, 'update'])->name('mahasiswa.update');
+    Route::delete('/{mahasiswa}', [MahasiswaController::class, 'destroy'])->name('mahasiswa.destroy');
+    Route::get('/{mahasiswa}/edit', [MahasiswaController::class, 'edit'])->name('mahasiswa.edit');
 });
