@@ -23,7 +23,7 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::prefix('user')->group(function () {
+Route::prefix('user')->middleware(['auth'])->group(function () {
     Route::get('/', [UserController::class, 'index'])->name('user.index');
     Route::post('/', [UserController::class, 'store'])->name('user.store');
     Route::get('/create', [UserController::class, 'create'])->name('user.create');
@@ -33,7 +33,7 @@ Route::prefix('user')->group(function () {
     Route::get('/{user}/edit', [UserController::class, 'edit'])->name('user.edit');
 });
 
-Route::prefix('mahasiswa')->group(function () {
+Route::prefix('mahasiswa')->middleware(['auth'])->group(function () {
     Route::get('/', [MahasiswaController::class, 'index'])->name('mahasiswa.index');
     Route::post('/', [MahasiswaController::class, 'store'])->name('mahasiswa.store');
     Route::get('/create', [MahasiswaController::class, 'create'])->name('mahasiswa.create');

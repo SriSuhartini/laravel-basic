@@ -39,11 +39,14 @@
                                         <a href="{{ route('mahasiswa.edit', $mahasiswa->id) }}">
                                             <button type="button" class="btn btn-xs btn-info mr-1">Edit</button>
                                         </a>
+                                        @can('isAdmin')
+                                        <!-- Tampilkan elemen ini hanya jika pengguna memiliki izin admin -->
                                         <form action="{{ route('mahasiswa.destroy', $mahasiswa->id) }}" method="POST">
                                             @csrf
                                             @method('DELETE')
                                             <button type="submit" class="btn btn-xs btn-danger">Hapus</button>
                                         </form>
+                                        @endcan
                                     </div>
                                 </td>
                             </tr>
