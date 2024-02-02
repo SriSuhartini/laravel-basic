@@ -14,15 +14,15 @@
                 </a>
                 <ul class="nav nav-treeview">
                     <li class="nav-item">
-                        <a href="#" class="nav-link active">
+                        <a href="{{ route('user.index') }}" class="nav-link">
                             <i class="far fa-circle nav-icon"></i>
-                            <p>Active Page</p>
+                            <p>User</p>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">
+                        <a href="{{ route('mahasiswa.index') }}" class="nav-link">
                             <i class="far fa-circle nav-icon"></i>
-                            <p>Inactive Page</p>
+                            <p>Mahasiswa</p>
                         </a>
                     </li>
                 </ul>
